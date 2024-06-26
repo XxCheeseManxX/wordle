@@ -1,0 +1,28 @@
+# WORDLE RULES: 
+1. Each guess must be a valid 5 letter word (has to be in the dictionary)
+2. The color of the tiles will change to show you how accurate your guess was
+3. Green = letter in the correct spot
+4. Yellow = letter in word but not in the correct spot
+5. Gray = Letter is not in the word
+6. Can't guess the same word twice
+
+
+
+# To get words text file: 
+"""
+There are over 12,000 5 letter words. This list only has commonly used ones(around 2000),
+which is why we are using it
+"""
+1. Go here: https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b
+2. Click on raw
+3. wget https://gist.githubusercontent.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b/raw/45c977427419a1e0edee8fd395af1e0a4966273b/wordle-answers-alphabetical.txt
+4. mv wordle-answers-alphabetical.txt wordle-answers.txt
+
+# To get all possible 5 letter words(to see if guess is legal):
+1. Go here: https://github.com/charlesreid1/five-letter-words/blob/master/sgb-words.txt
+2. Click on raw view
+3. wget https://raw.githubusercontent.com/charlesreid1/five-letter-words/master/sgb-words.txt
+4. mv sgb-words.txt allowed-words.txt
+
+# Install termcolor: https://github.com/termcolor/termcolor
+python3 -m pip install --upgrade termcolor
